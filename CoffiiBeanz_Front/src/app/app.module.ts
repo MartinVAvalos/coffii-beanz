@@ -29,9 +29,7 @@ import { SignupComponent } from './components/signup/signup.component';
     Page404Component,
     CardSummaryComponent,
     LoginComponent,
-    SignupComponent,
- 
-   
+    SignupComponent
   ],
   imports: [
     BrowserModule,

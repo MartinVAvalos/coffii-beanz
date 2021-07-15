@@ -8,13 +8,13 @@ import { ItemselectedComponent } from './components/itemselected/itemselected.co
 import { Page404Component } from './components/page404/page404.component';
 
 const routes: Routes = [
-  {path:'signup',component:SignupComponent,pathMatch: 'full'},
-  {path:'login',component:LoginComponent,pathMatch: 'full'},
-  {path:'dashboard', component: DashboardComponent, pathMatch: 'full'},
-  {path:'addproduct', component: AddItemComponent, pathMatch: 'full'},
-  {path:'product/:id/view',component:ItemselectedComponent,pathMatch: 'full'},
+  { path:'signup',component:SignupComponent,pathMatch: 'full' },
+  { path:'login',component:LoginComponent,pathMatch: 'full' },
+  { path:'dashboard', component: DashboardComponent, pathMatch: 'full' },
+  { path:'addproduct', component: AddItemComponent, pathMatch: 'full' },
+  { path:'product/:id/view',component:ItemselectedComponent,pathMatch: 'full' },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: '**', component:Page404Component},
+  { path: '**', component:Page404Component },
 ];
 
 

@@ -131,7 +131,21 @@ STATICFILES = DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 
+# SOCIAL_AUTH_TRAILING_SLASH = False
 SOCIAL_AUTH_TRAILING_SLASH = False  # Remove trailing slash from routes
 SOCIAL_AUTH_AUTH0_DOMAIN = config('DOMAIN')
 SOCIAL_AUTH_AUTH0_KEY = config('CLIENT_ID')
 SOCIAL_AUTH_AUTH0_SECRET = config('CLIENT_SECRET')
+SOCIAL_AUTH_AUTH0_SCOPE = [
+    'openid',
+    'profile',
+    'email'
+]
+
+AUTHENTICATION_BACKENDS = {
+    'YOUR_DJANGO_APP_NAME.auth0backend.Auth0',
+    'django.contrib.auth.backends.ModelBackend'
+}
+
+LOGIN_URL = '/login/auth0'
+LOGIN_REDIRECT_URL = '/dashboard'
