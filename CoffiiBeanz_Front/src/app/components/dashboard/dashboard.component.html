@@ -1,0 +1,26 @@
+<div class="cards">
+
+    <div *ngFor="let singleCard of cards" 
+          (click)="cardSelected(singleCard)" class="card">
+
+      <div class="card__image-holder">
+        <img class="card__image" [src]=singleCard.image alt="wave" />
+      </div>
+      <div class="card-title">
+        <h2>
+        {{singleCard.product}}
+          <small>
+          {{singleCard.sellerName}}
+          <!-- {{singleCard.id}} -->
+          </small>
+         <section>{{singleCard.price | currency}}</section>
+        </h2>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  
+  
+  

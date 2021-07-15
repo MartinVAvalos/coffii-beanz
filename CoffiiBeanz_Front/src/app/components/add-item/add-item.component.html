@@ -1,0 +1,58 @@
+<body>
+    <div class="container-center">
+      <h1>Add New Product</h1> 
+      <div class="group">
+        <!-- <form (ngSubmit)="onSubmit(f)" #f="ngForm"> -->
+        <form action="#">
+          <div class="position">
+            <input
+            ngModel 
+            type="text" 
+            name="Product"
+            required>
+            <label for="Product">Product Name</label>
+            <span>Enter Product Name</span>
+          </div>
+        <div class="position">
+          <input
+          ngModel 
+          type="number" 
+          name="price"
+          required>
+          <label for="price">Price</label>
+        <span>Name your Price</span>
+      </div>
+  
+      <div class="position">
+        <input 
+        ngModel 
+        type="text" 
+        name="sellerName">
+        <label for="sellerName">Seller name</label>
+      <span>Enter your Seller name</span>
+      </div>
+        
+      <div class="position">
+          <input
+          ngModel  
+          type="text" 
+          name="image"
+          required>
+          <label for="image">image URL</label>
+        <span>Enter image URL</span>
+      </div>
+      <button
+        type="submit" 
+        id="login-btn">
+        Post
+      </button>
+      </form>
+        
+    </div>
+      <!-- <p>Need an account? <a href="">Register Now</a></p> -->
+    </div>
+  </body>
+  
+  
+  
+  
