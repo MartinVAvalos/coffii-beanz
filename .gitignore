@@ -1,15 +1,15 @@
 .vscode
-.DS_Store
-/CoffiiBeanz_Front/.DS_Store
+**/.DS_Store
+**/.env
 
 # Django
-.env
 db.sqlite3
 
 # Angular
 /CoffiiBeanz_Front/.vscode
-/CoffiiBeanz_Front/.DS_STORE
 /CoffiiBeanz_Front/dist/
 /CoffiiBeanz_Front/node_modules
+CoffiiBeanz_Front/src/environments/environment.prod.ts
+CoffiiBeanz_Front/src/environments/environment.ts
 /CoffiiBeanz_Front/auth_config.json
 /CoffiiBeanz_Front/*.log

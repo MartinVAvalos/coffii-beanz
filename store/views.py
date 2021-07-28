@@ -33,9 +33,6 @@ def dashboardexample(request):
             return render("<h1>404 Page Not Found</h1>", status=status.HTTP_404_NOT_FOUND)
 
 
-
-
-
 # Prod
 @login_required
 def dashboard(request):
