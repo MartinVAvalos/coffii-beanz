@@ -15,9 +15,8 @@ import { CardSummaryComponent } from './components/card-summary/card-summary.com
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 
-
-
-
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment as env } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +34,10 @@ import { SignupComponent } from './components/signup/signup.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AuthModule.forRoot({
+      ...env.auth
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

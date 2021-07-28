@@ -1,6 +1,15 @@
-env
-.env
-db.sqlite
-CoffiiBeanz_Front/node_modules
-db.sqlite3
+.vscode
 .DS_Store
+/CoffiiBeanz_Front/.DS_Store
+
+# Django
+.env
+db.sqlite3
+
+# Angular
+/CoffiiBeanz_Front/.vscode
+/CoffiiBeanz_Front/.DS_STORE
+/CoffiiBeanz_Front/dist/
+/CoffiiBeanz_Front/node_modules
+/CoffiiBeanz_Front/auth_config.json
+/CoffiiBeanz_Front/*.log

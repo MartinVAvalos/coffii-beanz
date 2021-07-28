@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { AuthService } from '@auth0/auth0-angular';
+
 
 @Component({
   selector: 'app-login',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  // public auth: AuthService
+  constructor() {
+    console.log()
+   }
 
   ngOnInit(): void {
+  }
+
+  loginWithRedirect(): void {
+    // this.auth.loginWithRedirect();
   }
 
 }
