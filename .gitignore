@@ -3,6 +3,7 @@
 **/.env
 
 # Django
+/env
 db.sqlite3
 
 # Angular

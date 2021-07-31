@@ -12,8 +12,6 @@ import { AddItemComponent } from './components/add-item/add-item.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Page404Component } from './components/page404/page404.component';
 import { CardSummaryComponent } from './components/card-summary/card-summary.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
 
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from 'src/environments/environment';
@@ -27,8 +25,6 @@ import { environment as env } from 'src/environments/environment';
     AddItemComponent,
     Page404Component,
     CardSummaryComponent,
-    LoginComponent,
-    SignupComponent
   ],
   imports: [
     BrowserModule,

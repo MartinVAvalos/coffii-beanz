@@ -1,3 +1,5 @@
 from django.test import TestCase
+class UserTestCase(TestCase):
 
-# Create your tests here.
+    def subscribe(self):
+        print("Success")

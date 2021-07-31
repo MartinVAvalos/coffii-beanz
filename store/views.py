@@ -41,6 +41,8 @@ def dashboard(request):
     except:
             return render("<h1>404 Page Not Found</h1>", status=status.HTTP_404_NOT_FOUND)
 
+
+
 # @login_required
 # def dashboard(request):
 #     user = request.user
