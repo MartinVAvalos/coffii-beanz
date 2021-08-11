@@ -9,18 +9,22 @@ import { DOCUMENT } from '@angular/common';
 export class NavbarComponent implements OnInit {
   constructor(
     public auth: AuthService, 
-    @Inject(DOCUMENT) public document: Document
+    @Inject(DOCUMENT) public doc: Document
   ) {}
 
   ngOnInit(): void {
   }
 
-  loginWithRedirect(): void {
+  login(): void {
     this.auth.loginWithRedirect();
   }
 
   logout(): void {
-    this.auth.loginWithRedirect();
+    this.auth.logout({ returnTo: this.doc.location.origin });
+  }
+
+  signup(): void {
+    this.auth.loginWithRedirect({ screen_hint: 'signup' })
   }
 
 }

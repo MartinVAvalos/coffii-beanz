@@ -5,3 +5,13 @@ from django.db.models.deletion import CASCADE
 
 class User(AbstractUser):
     pass
+
+# "code": account_code,
+# "first_name": "Benjamin",
+# "last_name": "Du Monde",
+# "acquisition": {
+#     "campaign": "podcast-marketing",
+#     "channel": "social_media",
+#     "subchannel": "twitter",
+#     "cost": {"currency": "USD", "amount": 0.50},
+# },

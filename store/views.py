@@ -1,19 +1,19 @@
+from django.http.response import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-import json
 from rest_framework import status
 
+import json #for testing
 from django.contrib.auth import logout
 from django.conf import settings
-from django.http import HttpResponseRedirect
 from urllib.parse import urlencode
 from decouple import config
-# from django.http.response import HttpResponse, HttpResponseNotFound
 
 def loginexample(request):
     user = request.user
+    print(user.email)
     if user.is_authenticated:
-        return {"message": "Cheeks"}
+        return HttpResponse(json.dumps({ "message": user.email }))
     else:
         return render(request, 'store/example.html')
 
