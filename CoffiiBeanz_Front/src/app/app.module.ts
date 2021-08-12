@@ -15,6 +15,7 @@ import { CardSummaryComponent } from './components/card-summary/card-summary.com
 
 import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env } from 'src/environments/environment';
+import { ProfilesComponent } from './components/profiles/profiles.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { environment as env } from 'src/environments/environment';
     AddItemComponent,
     Page404Component,
     CardSummaryComponent,
+    ProfilesComponent,
   ],
   imports: [
     BrowserModule,
